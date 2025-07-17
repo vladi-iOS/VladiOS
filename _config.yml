@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "/vladiOS"
+baseurl: ""
 url: "https://vladi-ios.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
