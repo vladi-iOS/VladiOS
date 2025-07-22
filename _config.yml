@@ -1,0 +1,41 @@
+# SITE CONFIGURATION
+baseurl: "/vladiOS"
+url: "https://vladi-ios.github.io"
+
+# THEME-SPECIFIC CONFIGURATION
+title: vladiOS Blog
+description: "A website with blog posts and pages"
+avatar: assets/img/triangle.png
+favicon: assets/favicon.ico
+
+# Header and footer text
+header_text: vladiOS Blog
+header_feature_image: assets/img/header/triangular.jpeg
+header_feature_image_responsive: true
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+
+# Features
+katex: true
+mermaid: default
+color_theme: auto
+
+# PAGINATION
+paginate: 5
+paginate_path: "/blog/page:num"
+
+# PORTFOLIO
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:name
+
+# BUILD SETTINGS
+sass:
+  style: compressed
+  quiet_deps: true
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
+
+exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*"]
+
+remote_theme: sylhare/Type-on-Strap
